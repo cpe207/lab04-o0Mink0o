@@ -1,5 +1,11 @@
-function typeChecker(a, b) {
-  /* Your code here */
+function typeChecker(a, b):string | number {
+  if(typeof a === 'string' && typeof b === 'string'){
+    return "I LOVE YOU";
+  }
+  if(typeof a === 'number' && typeof b === 'number'){
+    return a+b;
+  }
+  return "NOT MATCHED";
 }
 
 //Test cases
